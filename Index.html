@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidzHub</title>
+
+  <!-- PWA Meta Tags (Safe to keep) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0F172A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/videocon.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="menu-icon">☰</div>
+    <div class="logo"><span>Vidz</span><span class="accent">Hub</span></div>
+    <div class="actions">
+      <span class="icon">🔍</span>
+      <span class="icon">🔔</span>
+      <div class="avatar"></div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay">
+      <h2 id="hero-title">BLACK CLOVER 2ND SEASON</h2>
+      <p id="hero-sub">The second season of Black Clover.</p>
+      <button class="play-btn">▶ PLAY NOW</button>
+    </div>
+    <div class="hero-slider" id="hero-slider"></div>
+  </section>
+
+  <!-- PLAYER -->
+  <div id="player-container" style="margin: 16px;"></div>
+
+  <!-- INFO CARDS -->
+  <section class="info-cards">
+    <div class="info-card">
+      <span class="icon">🔖</span>
+      <p>Please bookmark <b>vidzhub.site</b> to stay updated about our domains.</p>
+      <span class="close">✕</span>
+    </div>
+    <div class="info-card">
+      <span class="icon">📌</span>
+      <p><strong>PINNED #Updates</strong><br>Friends are live, plus profile and post...</p>
+      <span class="close">✕</span>
+    </div>
+    <div class="info-card share-card">
+      <span class="icon">ℹ️</span>
+      <p>If you enjoy the website, please consider sharing it with your friends.</p>
+      <div class="share-row">
+        <button class="share-btn share-default" onclick="shareTo('default')">🔗</button>
+        <button class="share-btn share-x" onclick="shareTo('x')">𝕏</button>
+        <button class="share-btn share-whatsapp" onclick="shareTo('whatsapp')">💬</button>
+        <button class="share-btn share-messenger" onclick="shareTo('messenger')">💌</button>
+        <button class="share-btn share-reddit" onclick="shareTo('reddit')">👽</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTINUE WATCHING -->
+  <section class="continue">
+    <div class="section-header">
+      <div class="title"><span>🕘</span><h3>Continue Watching</h3></div>
+      <a href="#">View more ›</a>
+    </div>
+    <div class="scroll-row" id="anime-row"></div>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="components/videocon.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Initialize the Video Player
+    Videocon.mount(
+      document.getElementById("player-container"),
+      "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+      { poster: "https://images.unsplash.com/photo-1541562232579-512a21360020?w=800" }
+    );
+  </script>
+</body>
+</html>  <section class="continue">
+    <div class="section-header">
+      <div class="title"><span>🕘</span><h3>Continue Watching</h3></div>
+      <a href="#">View more ›</a>
+    </div>
+    <div class="scroll-row" id="anime-row"></div>
+  </section>
+
+  <script src="components/videocon.js"></script>
+  <script src="js/
